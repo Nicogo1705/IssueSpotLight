@@ -1,0 +1,11 @@
+!ProceduralModelAsset
+Id: 33db7d98-0228-406d-93c0-6f503d7bed41
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Type: !ConeProceduralModel
+    Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+    UvScale: {X: 1.0, Y: 1.0}
+    LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+    NumberOfTextureCoordinates: 10
+    MaterialInstance:
+        Material: 95a79bba-e0ff-4a7e-8a7b-c64cd2c3012f:Ground Material
