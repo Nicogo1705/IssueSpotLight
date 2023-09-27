@@ -11,6 +11,7 @@ Hierarchy:
         - ref!! f509be71-36e6-4e69-ba3c-5902d17916d8
         - ref!! b49a40f6-0ccc-4ddb-a4cb-55205bfc9855
         - ref!! cf8b0231-e374-445c-ab53-6ccad691f0b0
+        - ref!! 43e495da-30a7-4260-ba93-b6a59488e8f6
         - ref!! c456c08a-5722-48ba-92dd-ac17d6ab6ac1
     Parts:
         -   Entity:
@@ -39,6 +40,20 @@ Hierarchy:
                                 ComputeTransmittance: false
                                 BiasParameters: {}
                         Intensity: 20.0
+        -   Entity:
+                Id: 43e495da-30a7-4260-ba93-b6a59488e8f6
+                Name: TestInstance
+                Components:
+                    ac252217e13efe1096fa4847fd9e53a4: !TransformComponent
+                        Id: 6937a23e-48b3-4d8a-a3aa-5056e6421703
+                        Position: {X: 0.0, Y: 0.0, Z: -1.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    d387d35e5a9c8ea82fca3c5f9148ea0d: !InstanceComponent
+                        Id: 0d133e92-9442-4100-a628-24173a0d4e09
+                        Enabled: false
+                        Master: ref!! eaa0049e-5e87-4b27-9412-86064ed6372a
         -   Entity:
                 Id: aaadecd5-b04d-41b6-a28e-0d6464419632
                 Name: Camera
@@ -123,7 +138,7 @@ Hierarchy:
                 Components:
                     0d13fa6892df5917648eaf2cddbdaa85: !TransformComponent
                         Id: 77cbe116-405c-465d-9afb-90e12f4173b9
-                        Position: {X: 0.0, Y: 0.5, Z: 0.0}
+                        Position: {X: 0.5, Y: 0.5, Z: 1.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
@@ -131,6 +146,9 @@ Hierarchy:
                         Id: 240dc1cd-4e3c-4c6f-9992-01e2ac453f43
                         Model: af397b87-2f9a-42c0-8379-c82409fbfcb7:Models/Sphere
                         Materials: {}
+                    a21544c24410282557c94bdcc4f7f0f6: !InstancingComponent
+                        Id: eaa0049e-5e87-4b27-9412-86064ed6372a
+                        Type: !InstancingEntityTransform {}
         -   Entity:
                 Id: f509be71-36e6-4e69-ba3c-5902d17916d8
                 Name: Skybox
